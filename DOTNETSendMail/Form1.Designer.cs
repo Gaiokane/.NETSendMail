@@ -41,6 +41,8 @@
             this.richtxtbox_text = new System.Windows.Forms.RichTextBox();
             this.btn_send = new System.Windows.Forms.Button();
             this.btn_reset = new System.Windows.Forms.Button();
+            this.txtbox_smtp = new System.Windows.Forms.TextBox();
+            this.lab_smtp = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lab_from
@@ -91,7 +93,7 @@
             this.txtbox_to.Location = new System.Drawing.Point(71, 52);
             this.txtbox_to.Name = "txtbox_to";
             this.txtbox_to.Size = new System.Drawing.Size(177, 21);
-            this.txtbox_to.TabIndex = 6;
+            this.txtbox_to.TabIndex = 8;
             // 
             // lab_to
             // 
@@ -99,7 +101,7 @@
             this.lab_to.Location = new System.Drawing.Point(12, 55);
             this.lab_to.Name = "lab_to";
             this.lab_to.Size = new System.Drawing.Size(53, 12);
-            this.lab_to.TabIndex = 5;
+            this.lab_to.TabIndex = 7;
             this.lab_to.Text = "收件人：";
             // 
             // txtbox_subject
@@ -107,7 +109,7 @@
             this.txtbox_subject.Location = new System.Drawing.Point(71, 93);
             this.txtbox_subject.Name = "txtbox_subject";
             this.txtbox_subject.Size = new System.Drawing.Size(177, 21);
-            this.txtbox_subject.TabIndex = 8;
+            this.txtbox_subject.TabIndex = 10;
             // 
             // lab_subject
             // 
@@ -115,7 +117,7 @@
             this.lab_subject.Location = new System.Drawing.Point(12, 96);
             this.lab_subject.Name = "lab_subject";
             this.lab_subject.Size = new System.Drawing.Size(53, 12);
-            this.lab_subject.TabIndex = 7;
+            this.lab_subject.TabIndex = 9;
             this.lab_subject.Text = "主  题：";
             // 
             // lab_text
@@ -124,7 +126,7 @@
             this.lab_text.Location = new System.Drawing.Point(12, 137);
             this.lab_text.Name = "lab_text";
             this.lab_text.Size = new System.Drawing.Size(53, 12);
-            this.lab_text.TabIndex = 9;
+            this.lab_text.TabIndex = 11;
             this.lab_text.Text = "正  文：";
             // 
             // richtxtbox_text
@@ -132,34 +134,52 @@
             this.richtxtbox_text.Location = new System.Drawing.Point(71, 134);
             this.richtxtbox_text.Name = "richtxtbox_text";
             this.richtxtbox_text.Size = new System.Drawing.Size(717, 304);
-            this.richtxtbox_text.TabIndex = 10;
+            this.richtxtbox_text.TabIndex = 12;
             this.richtxtbox_text.Text = "";
             // 
             // btn_send
             // 
-            this.btn_send.Location = new System.Drawing.Point(256, 50);
+            this.btn_send.Location = new System.Drawing.Point(256, 93);
             this.btn_send.Name = "btn_send";
             this.btn_send.Size = new System.Drawing.Size(75, 23);
-            this.btn_send.TabIndex = 11;
+            this.btn_send.TabIndex = 13;
             this.btn_send.Text = "发送";
             this.btn_send.UseVisualStyleBackColor = true;
             this.btn_send.Click += new System.EventHandler(this.btn_send_Click);
             // 
             // btn_reset
             // 
-            this.btn_reset.Location = new System.Drawing.Point(337, 50);
+            this.btn_reset.Location = new System.Drawing.Point(337, 93);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(75, 23);
-            this.btn_reset.TabIndex = 12;
+            this.btn_reset.TabIndex = 14;
             this.btn_reset.Text = "重置";
             this.btn_reset.UseVisualStyleBackColor = true;
             this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
+            // 
+            // txtbox_smtp
+            // 
+            this.txtbox_smtp.Location = new System.Drawing.Point(313, 52);
+            this.txtbox_smtp.Name = "txtbox_smtp";
+            this.txtbox_smtp.Size = new System.Drawing.Size(177, 21);
+            this.txtbox_smtp.TabIndex = 6;
+            // 
+            // lab_smtp
+            // 
+            this.lab_smtp.AutoSize = true;
+            this.lab_smtp.Location = new System.Drawing.Point(266, 55);
+            this.lab_smtp.Name = "lab_smtp";
+            this.lab_smtp.Size = new System.Drawing.Size(41, 12);
+            this.lab_smtp.TabIndex = 5;
+            this.lab_smtp.Text = "SMTP：";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtbox_smtp);
+            this.Controls.Add(this.lab_smtp);
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.btn_send);
             this.Controls.Add(this.richtxtbox_text);
@@ -197,6 +217,8 @@
         private System.Windows.Forms.RichTextBox richtxtbox_text;
         private System.Windows.Forms.Button btn_send;
         private System.Windows.Forms.Button btn_reset;
+        private System.Windows.Forms.TextBox txtbox_smtp;
+        private System.Windows.Forms.Label lab_smtp;
     }
 }
 
